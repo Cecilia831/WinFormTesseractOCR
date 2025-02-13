@@ -8,20 +8,41 @@ using System.Text;
 
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 using Tesseract;
 using static System.Net.Mime.MediaTypeNames;
 using System.Text.RegularExpressions;
 using GemBox.Pdf;
 using HuggingFace;
 using System.Windows.Media;
+using System.Xml.Serialization;
+using System.IO;
+using System.Xml;
+using System.Threading;
 
 namespace WinFormTesseractOCR
 {
     public partial class Form1 : Form
     {
+        XmlSerializer xs;
+        List<ItemClass> ls;
         public Form1()
         {
             InitializeComponent();
+            ls = new List<ItemClass>();
+            xs = new XmlSerializer(typeof(List<ItemClass>));
+            
+        }
+
+        public Queue<ItemClass> q = new Queue<ItemClass>();
+
+        public void ReadStream() {
+            FileStream fs = new FileStream("..\\Item.xml", FileMode.OpenOrCreate, FileAccess.Read);
+            ls = (List<ItemClass>)xs.Deserialize(fs);
+
+            dataGridView1.DataSource = ls;
+            fs.Close();
+            
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -33,25 +54,26 @@ namespace WinFormTesseractOCR
                 var document = PdfDocument.Load(openfile.FileName);
                 var imageOptions = new ImageSaveOptions(ImageSaveFormat.Jpeg);
                 // Page limition
-                if (document.Pages.Count > 2)
+                /*if (document.Pages.Count > 2)
                 {
                     //Pop up window warning only 2 page PDF limited
                 }
                 //Convert PDF to JPEG
-                /*if (pictureBox1.Image != null)
+                if (pictureBox1.Image != null)
                 {
                     pictureBox1.Image.Dispose();
                     pictureBox1.Image = null;
                     pictureBox1.Dispose();
-                }*/
+                }
                 for (int pageIndex = 0; pageIndex < document.Pages.Count; pageIndex++)
                 {
                     imageOptions.PageNumber = pageIndex;
                     document.Save($"C:/Users/lisa/Downloads/Output.jpg", imageOptions);
                     document.Close();
-                }
-                
-                //pictureBox1.Load($"C:/Users/lisa/Downloads/Output.jpg") ;
+                }*/
+
+                document.Save($"C:/Users/lisa/Downloads/Output.jpg");
+                document.Close();
 
                 // OCR the output
                 var img = new Bitmap($"C:/Users/lisa/Downloads/Output.jpg");
@@ -63,6 +85,7 @@ namespace WinFormTesseractOCR
                 Console.WriteLine("Mean confidence: {0}", page.GetMeanConfidence());
                 Console.WriteLine("Text (GetText): \r\n{0}", text);
                 Console.WriteLine("Text (iterator):");
+                img.Dispose();
             }
         }
 
@@ -158,10 +181,6 @@ namespace WinFormTesseractOCR
             }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void costCode_Click(object sender, EventArgs e)
         {
@@ -172,5 +191,100 @@ namespace WinFormTesseractOCR
         {
 
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_3(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inject_Click(object sender, EventArgs e)
+        {
+            //
+            FileStream fs = new FileStream("..\\Item.xml", FileMode.Create, FileAccess.Write);
+            ItemClass ic = new ItemClass();
+            ic.Id = "|";
+            ic.Title = titleTextBox.Text;
+            ic.Amount = amountTextBox.Text;
+            ic.Date = dateTextBox.Text;
+            ic.CostCode = int.Parse(costCodeTextBox.Text);
+            ic.Project = projectTextBox.Text;
+            ic.AssignTo = assignToComboBox.Text;
+
+            ls.Add(ic);
+            xs.Serialize(fs, ls);
+            fs.Close();
+
+            FileStream fsc = new FileStream("..\\Item.xml", FileMode.Open, FileAccess.Read);
+            ls = (List<ItemClass>)xs.Deserialize(fsc);
+            dataGridView1.DataSource = ls;
+            fsc.Close();
+
+            //Queue
+            q.Enqueue(ic);
+        }
+        // Read
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            FileStream fs = new FileStream("..\\Item.xml", FileMode.Open, FileAccess.Read);
+            ls = (List<ItemClass>)xs.Deserialize(fs);
+
+            dataGridView1.DataSource = ls;
+            fs.Close();
+        }
+        //Delete
+        private void button2_Click_2(object sender, EventArgs e)
+        {
+            
+            FileStream fs = new FileStream("..\\Item.xml", FileMode.OpenOrCreate, FileAccess.Read);
+
+            byte[] buffer = new byte[1024];
+
+            int bytesRead = fs.Read(buffer, 0, buffer.Length);
+
+            // Access the current position in the stream
+
+            long currentPosition = fs.Position;
+
+            MessageBox.Show($"Current position in the file: {currentPosition} bytes");
+
+            var last = fs.Length - 1;
+            MessageBox.Show(last.ToString());
+
+            //int loc = (int)fs.Position;
+            //MessageBox.Show(loc);
+            //ItemClass i = ls[loc];
+            //MessageBox.Show("Delete " + ls[loc].Title + " " + ls[loc].Amount + " " + ls[loc].Date+" " + ls[loc].CostCode +" "+ls[loc].Project + " " + ls[loc].AssignTo);
+            fs.Close();
+            //return fs.Position;
+        }
+
+        private void startButton_Click(object sender, EventArgs e)
+        {
+            int done = 0;
+            int todo = q.Count();
+            stateTestBox.Text = ($"Done: {done} | Queue: {todo}");
+            while (q.Count > 0)
+            {
+                ItemClass doing = new ItemClass();
+                doing = q.Peek();
+                // Inject Invoices
+                Thread.Sleep(50);
+                q.Dequeue();
+                done = done + 1;
+                todo = q.Count();
+                stateTestBox.Text = ($"Done: {done} | Queue: {todo}");
+            }
+        }
     }
+
 }

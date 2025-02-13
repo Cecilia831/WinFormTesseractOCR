@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<ArrayOfItemClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ItemClass>
+    <Id>|</Id>
+    <Title>asd</Title>
+    <Amount>asd</Amount>
+    <Date>sd</Date>
+    <CostCode>333</CostCode>
+    <Project>asd</Project>
+    <AssignTo>2 Brothers Painting</AssignTo>
+  </ItemClass>
+  <ItemClass>
+    <Id>|</Id>
+    <Title>123</Title>
+    <Amount>123</Amount>
+    <Date>234</Date>
+    <CostCode>234</CostCode>
+    <Project>asd</Project>
+    <AssignTo>2 Brothers Painting</AssignTo>
+  </ItemClass>
+  <ItemClass>
+    <Id>|</Id>
+    <Title>123</Title>
+    <Amount>1234</Amount>
+    <Date>33</Date>
+    <CostCode>123</CostCode>
+    <Project>sdfg</Project>
+    <AssignTo>2 Brothers Painting</AssignTo>
+  </ItemClass>
+  <ItemClass>
+    <Id>|</Id>
+    <Title>321</Title>
+    <Amount>321</Amount>
+    <Date />
+    <CostCode>123</CostCode>
+    <Project>sdfg</Project>
+    <AssignTo>2 Brothers Painting</AssignTo>
+  </ItemClass>
+  <ItemClass>
+    <Id>|</Id>
+    <Title>1234</Title>
+    <Amount>23</Amount>
+    <Date>43</Date>
+    <CostCode>123</CostCode>
+    <Project>dfwaw</Project>
+    <AssignTo>wwefr</AssignTo>
+  </ItemClass>
+  <ItemClass>
+    <Id>|</Id>
+    <Title>1234</Title>
+    <Amount>23</Amount>
+    <Date>43</Date>
+    <CostCode>123</CostCode>
+    <Project>dfwaw</Project>
+    <AssignTo>wwefr</AssignTo>
+  </ItemClass>
+</ArrayOfItemClass>

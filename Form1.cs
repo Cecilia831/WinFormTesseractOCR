@@ -26,23 +26,26 @@ namespace WinFormTesseractOCR
     {
         XmlSerializer xs;
         List<ItemClass> ls;
+        Queue<ItemClass> q;
+        internal String message;
         public Form1()
         {
             InitializeComponent();
             ls = new List<ItemClass>();
+            q = new Queue<ItemClass>();
             xs = new XmlSerializer(typeof(List<ItemClass>));
             
         }
 
-        public Queue<ItemClass> q = new Queue<ItemClass>();
+        //public Queue<ItemClass> q = new Queue<ItemClass>();
 
         public void ReadStream() {
             FileStream fs = new FileStream("..\\Item.xml", FileMode.OpenOrCreate, FileAccess.Read);
             ls = (List<ItemClass>)xs.Deserialize(fs);
-
             dataGridView1.DataSource = ls;
+            //q = (Queue<ItemClass>)xs.Deserialize(fs);
+            //dataGridView1.DataSource = q;
             fs.Close();
-            
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -181,7 +184,6 @@ namespace WinFormTesseractOCR
             }
         }
 
-
         private void costCode_Click(object sender, EventArgs e)
         {
 
@@ -209,14 +211,14 @@ namespace WinFormTesseractOCR
 
         private void inject_Click(object sender, EventArgs e)
         {
-            //
+            //Inject
             FileStream fs = new FileStream("..\\Item.xml", FileMode.Create, FileAccess.Write);
             ItemClass ic = new ItemClass();
             ic.Id = "|";
             ic.Title = titleTextBox.Text;
             ic.Amount = amountTextBox.Text;
             ic.Date = dateTextBox.Text;
-            ic.CostCode = int.Parse(costCodeTextBox.Text);
+            ic.CostCode = costCodeTextBox.Text;
             ic.Project = projectTextBox.Text;
             ic.AssignTo = assignToComboBox.Text;
 
@@ -228,17 +230,30 @@ namespace WinFormTesseractOCR
             ls = (List<ItemClass>)xs.Deserialize(fsc);
             dataGridView1.DataSource = ls;
             fsc.Close();
+            /*
+            q.Enqueue(ic);
+            xs.Serialize(fs, q);
+            fs.Close();
+
+            FileStream fsc = new FileStream("..\\Item.xml", FileMode.Open, FileAccess.Read);
+            q = (Queue<ItemClass>)xs.Deserialize(fsc);
+            dataGridView1.DataSource = q;
+            fsc.Close();
+            */
 
             //Queue
             q.Enqueue(ic);
+
         }
         // Read
         private void button2_Click_1(object sender, EventArgs e)
         {
             FileStream fs = new FileStream("..\\Item.xml", FileMode.Open, FileAccess.Read);
             ls = (List<ItemClass>)xs.Deserialize(fs);
-
             dataGridView1.DataSource = ls;
+            
+            //q = (Queue<ItemClass>)xs.Deserialize(fs);
+            //dataGridView1.DataSource = q;
             fs.Close();
         }
         //Delete
@@ -273,17 +288,32 @@ namespace WinFormTesseractOCR
             int done = 0;
             int todo = q.Count();
             stateTestBox.Text = ($"Done: {done} | Queue: {todo}");
+            ItemClass doing = new ItemClass();
+            
             while (q.Count > 0)
             {
-                ItemClass doing = new ItemClass();
-                doing = q.Peek();
                 // Inject Invoices
-                Thread.Sleep(50);
+                doing = q.Peek();
+                Inject(doing);
+                FreshListState();
                 q.Dequeue();
                 done = done + 1;
                 todo = q.Count();
                 stateTestBox.Text = ($"Done: {done} | Queue: {todo}");
+
             }
+        }
+
+        private void Inject(ItemClass row) 
+        {
+            Automate.Program inj = new Automate.Program();
+            message = inj.GetPONum(row);
+            Console.WriteLine(message);
+        }
+
+        private void FreshListState()
+        {
+
         }
     }
 

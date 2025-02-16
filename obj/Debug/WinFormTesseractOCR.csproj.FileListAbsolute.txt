@@ -64,3 +64,10 @@ C:\Users\lisa\OneDrive\Documents\WinFormTesseractOCR\bin\Debug\Tiktoken.Encoding
 C:\Users\lisa\OneDrive\Documents\WinFormTesseractOCR\bin\Debug\Tiktoken.Encodings.cl100k.xml
 C:\Users\lisa\OneDrive\Documents\WinFormTesseractOCR\bin\Debug\Tiktoken.Encodings.o200k.xml
 C:\Users\lisa\OneDrive\Documents\WinFormTesseractOCR\obj\Debug\WinFormT.AF741A13.Up2Date
+C:\Users\lisa\OneDrive\Documents\WinFormTesseractOCR\bin\Debug\selenium-manager\linux\selenium-manager
+C:\Users\lisa\OneDrive\Documents\WinFormTesseractOCR\bin\Debug\selenium-manager\macos\selenium-manager
+C:\Users\lisa\OneDrive\Documents\WinFormTesseractOCR\bin\Debug\selenium-manager\windows\selenium-manager.exe
+C:\Users\lisa\OneDrive\Documents\WinFormTesseractOCR\bin\Debug\WebDriver.dll
+C:\Users\lisa\OneDrive\Documents\WinFormTesseractOCR\bin\Debug\WebDriver.xml
+C:\Users\lisa\OneDrive\Documents\WinFormTesseractOCR\bin\Debug\WebDriver.Support.dll
+C:\Users\lisa\OneDrive\Documents\WinFormTesseractOCR\bin\Debug\WebDriver.Support.xml

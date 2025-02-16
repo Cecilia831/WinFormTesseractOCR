@@ -12,7 +12,7 @@ namespace WinFormTesseractOCR
         public string Title { get; set; }
         public string Amount { get; set; }
         public string Date { get; set; }
-        public int CostCode { get; set; }
+        public string CostCode { get; set; }
         public string Project { get; set; }
         public string AssignTo { get; set; }
 

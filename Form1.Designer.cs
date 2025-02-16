@@ -61,10 +61,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(45, 46);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(68, 69);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(134, 41);
+            this.button1.Size = new System.Drawing.Size(201, 62);
             this.button1.TabIndex = 0;
             this.button1.Text = "Open PDF";
             this.button1.UseVisualStyleBackColor = true;
@@ -72,20 +72,21 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(45, 92);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.Location = new System.Drawing.Point(68, 138);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(817, 180);
+            this.textBox1.Size = new System.Drawing.Size(1224, 268);
             this.textBox1.TabIndex = 2;
             // 
             // title
             // 
             this.title.AutoSize = true;
-            this.title.Location = new System.Drawing.Point(904, 92);
+            this.title.Location = new System.Drawing.Point(1356, 138);
+            this.title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(27, 13);
+            this.title.Size = new System.Drawing.Size(38, 20);
             this.title.TabIndex = 3;
             this.title.Text = "Title";
             this.title.Click += new System.EventHandler(this.Label1_Click);
@@ -93,63 +94,65 @@
             // amount
             // 
             this.amount.AutoSize = true;
-            this.amount.Location = new System.Drawing.Point(904, 223);
+            this.amount.Location = new System.Drawing.Point(1356, 334);
+            this.amount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.amount.Name = "amount";
-            this.amount.Size = new System.Drawing.Size(43, 13);
+            this.amount.Size = new System.Drawing.Size(65, 20);
             this.amount.TabIndex = 4;
             this.amount.Text = "Amount";
             // 
             // date
             // 
             this.date.AutoSize = true;
-            this.date.Location = new System.Drawing.Point(901, 291);
+            this.date.Location = new System.Drawing.Point(1352, 436);
+            this.date.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.date.Name = "date";
-            this.date.Size = new System.Drawing.Size(30, 13);
+            this.date.Size = new System.Drawing.Size(44, 20);
             this.date.TabIndex = 5;
             this.date.Text = "Date";
             this.date.Click += new System.EventHandler(this.label3_Click);
             // 
             // titleTextBox
             // 
-            this.titleTextBox.Location = new System.Drawing.Point(904, 110);
-            this.titleTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.titleTextBox.Location = new System.Drawing.Point(1356, 165);
+            this.titleTextBox.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.titleTextBox.Name = "titleTextBox";
-            this.titleTextBox.Size = new System.Drawing.Size(148, 20);
+            this.titleTextBox.Size = new System.Drawing.Size(220, 26);
             this.titleTextBox.TabIndex = 6;
             this.titleTextBox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // amountTextBox
             // 
-            this.amountTextBox.Location = new System.Drawing.Point(904, 252);
-            this.amountTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.amountTextBox.Location = new System.Drawing.Point(1356, 378);
+            this.amountTextBox.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.amountTextBox.Name = "amountTextBox";
-            this.amountTextBox.Size = new System.Drawing.Size(148, 20);
+            this.amountTextBox.Size = new System.Drawing.Size(220, 26);
             this.amountTextBox.TabIndex = 7;
             this.amountTextBox.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // dateTextBox
             // 
-            this.dateTextBox.Location = new System.Drawing.Point(904, 320);
-            this.dateTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dateTextBox.Location = new System.Drawing.Point(1356, 480);
+            this.dateTextBox.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.dateTextBox.Name = "dateTextBox";
-            this.dateTextBox.Size = new System.Drawing.Size(148, 20);
+            this.dateTextBox.Size = new System.Drawing.Size(220, 26);
             this.dateTextBox.TabIndex = 8;
             // 
             // projectTextBox
             // 
-            this.projectTextBox.Location = new System.Drawing.Point(904, 428);
-            this.projectTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.projectTextBox.Location = new System.Drawing.Point(1356, 642);
+            this.projectTextBox.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.projectTextBox.Name = "projectTextBox";
-            this.projectTextBox.Size = new System.Drawing.Size(148, 20);
+            this.projectTextBox.Size = new System.Drawing.Size(220, 26);
             this.projectTextBox.TabIndex = 9;
             // 
             // project
             // 
             this.project.AutoSize = true;
-            this.project.Location = new System.Drawing.Point(901, 411);
-            this.project.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.project.Location = new System.Drawing.Point(1352, 616);
+            this.project.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.project.Name = "project";
-            this.project.Size = new System.Drawing.Size(40, 13);
+            this.project.Size = new System.Drawing.Size(58, 20);
             this.project.TabIndex = 10;
             this.project.Text = "Project";
             this.project.Click += new System.EventHandler(this.label1_Click_1);
@@ -157,38 +160,38 @@
             // assignTo
             // 
             this.assignTo.AutoSize = true;
-            this.assignTo.Location = new System.Drawing.Point(904, 463);
-            this.assignTo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.assignTo.Location = new System.Drawing.Point(1356, 694);
+            this.assignTo.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.assignTo.Name = "assignTo";
-            this.assignTo.Size = new System.Drawing.Size(56, 13);
+            this.assignTo.Size = new System.Drawing.Size(83, 20);
             this.assignTo.TabIndex = 11;
             this.assignTo.Text = "Assign to :";
             // 
             // invoiceNum
             // 
             this.invoiceNum.AutoSize = true;
-            this.invoiceNum.Location = new System.Drawing.Point(904, 173);
-            this.invoiceNum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.invoiceNum.Location = new System.Drawing.Point(1356, 260);
+            this.invoiceNum.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.invoiceNum.Name = "invoiceNum";
-            this.invoiceNum.Size = new System.Drawing.Size(62, 13);
+            this.invoiceNum.Size = new System.Drawing.Size(87, 20);
             this.invoiceNum.TabIndex = 13;
             this.invoiceNum.Text = "Invoice No.";
             this.invoiceNum.Click += new System.EventHandler(this.label1_Click_2);
             // 
             // invoiceNumTextBox
             // 
-            this.invoiceNumTextBox.Location = new System.Drawing.Point(904, 194);
-            this.invoiceNumTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.invoiceNumTextBox.Location = new System.Drawing.Point(1356, 291);
+            this.invoiceNumTextBox.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.invoiceNumTextBox.Name = "invoiceNumTextBox";
-            this.invoiceNumTextBox.Size = new System.Drawing.Size(148, 20);
+            this.invoiceNumTextBox.Size = new System.Drawing.Size(220, 26);
             this.invoiceNumTextBox.TabIndex = 14;
             // 
             // extract
             // 
-            this.extract.Location = new System.Drawing.Point(241, 46);
-            this.extract.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.extract.Location = new System.Drawing.Point(362, 69);
+            this.extract.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.extract.Name = "extract";
-            this.extract.Size = new System.Drawing.Size(134, 41);
+            this.extract.Size = new System.Drawing.Size(201, 62);
             this.extract.TabIndex = 15;
             this.extract.Text = "Extract";
             this.extract.UseVisualStyleBackColor = true;
@@ -196,10 +199,10 @@
             // 
             // inject
             // 
-            this.inject.Location = new System.Drawing.Point(435, 46);
-            this.inject.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.inject.Location = new System.Drawing.Point(652, 69);
+            this.inject.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.inject.Name = "inject";
-            this.inject.Size = new System.Drawing.Size(134, 41);
+            this.inject.Size = new System.Drawing.Size(201, 62);
             this.inject.TabIndex = 16;
             this.inject.Text = "Add to List";
             this.inject.UseVisualStyleBackColor = true;
@@ -207,18 +210,19 @@
             // 
             // costCodeTextBox
             // 
-            this.costCodeTextBox.Location = new System.Drawing.Point(904, 376);
-            this.costCodeTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.costCodeTextBox.Location = new System.Drawing.Point(1356, 564);
+            this.costCodeTextBox.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.costCodeTextBox.Name = "costCodeTextBox";
-            this.costCodeTextBox.Size = new System.Drawing.Size(148, 20);
+            this.costCodeTextBox.Size = new System.Drawing.Size(220, 26);
             this.costCodeTextBox.TabIndex = 19;
             // 
             // costCode
             // 
             this.costCode.AutoSize = true;
-            this.costCode.Location = new System.Drawing.Point(901, 350);
+            this.costCode.Location = new System.Drawing.Point(1352, 525);
+            this.costCode.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.costCode.Name = "costCode";
-            this.costCode.Size = new System.Drawing.Size(56, 13);
+            this.costCode.Size = new System.Drawing.Size(84, 20);
             this.costCode.TabIndex = 20;
             this.costCode.Text = "Cost Code";
             this.costCode.Click += new System.EventHandler(this.costCode_Click);
@@ -355,34 +359,39 @@
             "Premier Pacific Roofing",
             "Barbur BLVD Rentals INC",
             "BiMart"});
-            this.assignToComboBox.Location = new System.Drawing.Point(904, 492);
+            this.assignToComboBox.Location = new System.Drawing.Point(1356, 738);
+            this.assignToComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.assignToComboBox.Name = "assignToComboBox";
-            this.assignToComboBox.Size = new System.Drawing.Size(148, 21);
+            this.assignToComboBox.Size = new System.Drawing.Size(220, 28);
             this.assignToComboBox.TabIndex = 21;
             this.assignToComboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // menuStrip1
             // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1142, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1713, 24);
             this.menuStrip1.TabIndex = 23;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(45, 277);
+            this.progressBar1.Location = new System.Drawing.Point(68, 416);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(100, 23);
+            this.progressBar1.Size = new System.Drawing.Size(150, 34);
             this.progressBar1.TabIndex = 24;
             // 
             // Sub
             // 
             this.Sub.AutoSize = true;
-            this.Sub.Location = new System.Drawing.Point(904, 135);
+            this.Sub.Location = new System.Drawing.Point(1356, 202);
+            this.Sub.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Sub.Name = "Sub";
-            this.Sub.Size = new System.Drawing.Size(26, 13);
+            this.Sub.Size = new System.Drawing.Size(38, 20);
             this.Sub.TabIndex = 25;
             this.Sub.Text = "Sub";
             this.Sub.Click += new System.EventHandler(this.label1_Click_3);
@@ -519,24 +528,28 @@
             "Premier Pacific Roofing",
             "Barbur BLVD Rentals INC",
             "BiMart"});
-            this.subComboBox.Location = new System.Drawing.Point(904, 151);
+            this.subComboBox.Location = new System.Drawing.Point(1356, 226);
+            this.subComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.subComboBox.Name = "subComboBox";
-            this.subComboBox.Size = new System.Drawing.Size(148, 21);
+            this.subComboBox.Size = new System.Drawing.Size(220, 28);
             this.subComboBox.TabIndex = 26;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(45, 320);
+            this.dataGridView1.Location = new System.Drawing.Point(68, 480);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(817, 150);
+            this.dataGridView1.RowHeadersWidth = 62;
+            this.dataGridView1.Size = new System.Drawing.Size(1226, 225);
             this.dataGridView1.TabIndex = 27;
             // 
             // goButton
             // 
-            this.goButton.Location = new System.Drawing.Point(170, 277);
+            this.goButton.Location = new System.Drawing.Point(255, 416);
+            this.goButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.goButton.Name = "goButton";
-            this.goButton.Size = new System.Drawing.Size(75, 23);
+            this.goButton.Size = new System.Drawing.Size(112, 34);
             this.goButton.TabIndex = 28;
             this.goButton.Text = "List";
             this.goButton.UseVisualStyleBackColor = true;
@@ -544,27 +557,30 @@
             // 
             // delete
             // 
-            this.delete.Location = new System.Drawing.Point(275, 278);
+            this.delete.Location = new System.Drawing.Point(412, 417);
+            this.delete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.delete.Name = "delete";
-            this.delete.Size = new System.Drawing.Size(75, 23);
+            this.delete.Size = new System.Drawing.Size(112, 34);
             this.delete.TabIndex = 29;
-            this.delete.Text = "Delete";
+            this.delete.Text = "Clear";
             this.delete.UseVisualStyleBackColor = true;
             this.delete.Click += new System.EventHandler(this.button2_Click_2);
             // 
             // stateTestBox
             // 
-            this.stateTestBox.Location = new System.Drawing.Point(471, 279);
+            this.stateTestBox.Location = new System.Drawing.Point(706, 418);
+            this.stateTestBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.stateTestBox.Name = "stateTestBox";
-            this.stateTestBox.Size = new System.Drawing.Size(223, 20);
+            this.stateTestBox.Size = new System.Drawing.Size(332, 26);
             this.stateTestBox.TabIndex = 30;
             this.stateTestBox.Text = "Done | Queue";
             // 
             // startButton
             // 
-            this.startButton.Location = new System.Drawing.Point(366, 277);
+            this.startButton.Location = new System.Drawing.Point(549, 416);
+            this.startButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.startButton.Name = "startButton";
-            this.startButton.Size = new System.Drawing.Size(75, 23);
+            this.startButton.Size = new System.Drawing.Size(112, 34);
             this.startButton.TabIndex = 31;
             this.startButton.Text = "Start";
             this.startButton.UseVisualStyleBackColor = true;
@@ -572,12 +588,12 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScrollMargin = new System.Drawing.Size(10, 0);
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.ClientSize = new System.Drawing.Size(1142, 572);
+            this.ClientSize = new System.Drawing.Size(1713, 858);
             this.Controls.Add(this.startButton);
             this.Controls.Add(this.stateTestBox);
             this.Controls.Add(this.delete);
@@ -608,7 +624,7 @@
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Form1";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

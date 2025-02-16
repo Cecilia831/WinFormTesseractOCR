@@ -3,18 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\lisa\\OneDrive\\Documents\\WinFormTesseractOCR\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D3270E88-BCED-4F8B-A780-43A805638D83}|WinFormTesseractOCR.csproj|c:\\users\\lisa\\onedrive\\documents\\winformtesseractocr\\inject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3270E88-BCED-4F8B-A780-43A805638D83}|WinFormTesseractOCR.csproj|solutionrelative:inject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D3270E88-BCED-4F8B-A780-43A805638D83}|WinFormTesseractOCR.csproj|C:\\Users\\lisa\\OneDrive\\Documents\\WinFormTesseractOCR\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D3270E88-BCED-4F8B-A780-43A805638D83}|WinFormTesseractOCR.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3270E88-BCED-4F8B-A780-43A805638D83}|WinFormTesseractOCR.csproj|c:\\users\\lisa\\onedrive\\documents\\winformtesseractocr\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D3270E88-BCED-4F8B-A780-43A805638D83}|WinFormTesseractOCR.csproj|C:\\Users\\lisa\\OneDrive\\Documents\\WinFormTesseractOCR\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D3270E88-BCED-4F8B-A780-43A805638D83}|WinFormTesseractOCR.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|WinFormTesseractOCR||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3270E88-BCED-4F8B-A780-43A805638D83}|WinFormTesseractOCR.csproj|c:\\users\\lisa\\onedrive\\documents\\winformtesseractocr\\itemclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D3270E88-BCED-4F8B-A780-43A805638D83}|WinFormTesseractOCR.csproj|C:\\Users\\lisa\\OneDrive\\Documents\\WinFormTesseractOCR\\itemclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D3270E88-BCED-4F8B-A780-43A805638D83}|WinFormTesseractOCR.csproj|solutionrelative:itemclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -22,25 +23,22 @@
       "RelativeMoniker": "D:0:0:{D3270E88-BCED-4F8B-A780-43A805638D83}|WinFormTesseractOCR.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3270E88-BCED-4F8B-A780-43A805638D83}|WinFormTesseractOCR.csproj|C:\\Users\\lisa\\OneDrive\\Documents\\WinFormTesseractOCR\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3270E88-BCED-4F8B-A780-43A805638D83}|WinFormTesseractOCR.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D3270E88-BCED-4F8B-A780-43A805638D83}|WinFormTesseractOCR.csproj|C:\\Users\\lisa\\OneDrive\\Documents\\WinFormTesseractOCR\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{D3270E88-BCED-4F8B-A780-43A805638D83}|WinFormTesseractOCR.csproj|solutionrelative:packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3270E88-BCED-4F8B-A780-43A805638D83}|WinFormTesseractOCR.csproj|c:\\users\\lisa\\onedrive\\documents\\winformtesseractocr\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|1e78f8db-6c07-4d61-a18f-7514010abd56"
+      "AbsoluteMoniker": "D:0:0:{D3270E88-BCED-4F8B-A780-43A805638D83}|WinFormTesseractOCR.csproj|C:\\Users\\lisa\\OneDrive\\Documents\\WinFormTesseractOCR\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3270E88-BCED-4F8B-A780-43A805638D83}|WinFormTesseractOCR.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 121,
+      "VerticalTabListWidth": 100,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -96,7 +94,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "inject.cs",
+              "DocumentMoniker": "C:\\Users\\lisa\\OneDrive\\Documents\\WinFormTesseractOCR\\inject.cs",
+              "RelativeDocumentMoniker": "inject.cs",
+              "ToolTip": "C:\\Users\\lisa\\OneDrive\\Documents\\WinFormTesseractOCR\\inject.cs",
+              "RelativeToolTip": "inject.cs",
+              "ViewState": "AgIAADwBAAAAAAAAAAD4vzABAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T02:51:08.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\lisa\\OneDrive\\Documents\\WinFormTesseractOCR\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\lisa\\OneDrive\\Documents\\WinFormTesseractOCR\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAACYBAAAAAAAAAAAgwDYBAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T01:21:35.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\lisa\\OneDrive\\Documents\\WinFormTesseractOCR\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -114,34 +138,9 @@
               "RelativeDocumentMoniker": "ItemClass.cs",
               "ToolTip": "C:\\Users\\lisa\\OneDrive\\Documents\\WinFormTesseractOCR\\ItemClass.cs",
               "RelativeToolTip": "ItemClass.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T03:50:14.196Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "WinFormTesseractOCR",
-              "DocumentMoniker": "C:\\Users\\lisa\\OneDrive\\Documents\\WinFormTesseractOCR\\WinFormTesseractOCR.csproj",
-              "RelativeDocumentMoniker": "WinFormTesseractOCR.csproj",
-              "ToolTip": "C:\\Users\\lisa\\OneDrive\\Documents\\WinFormTesseractOCR\\WinFormTesseractOCR.csproj",
-              "RelativeToolTip": "WinFormTesseractOCR.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-02-13T01:23:24.551Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\lisa\\OneDrive\\Documents\\WinFormTesseractOCR\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\lisa\\OneDrive\\Documents\\WinFormTesseractOCR\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAAkBAAAAAAAAAAAAABgBAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T01:21:35.321Z",
               "EditorCaption": ""
             },
             {
@@ -152,27 +151,27 @@
               "RelativeDocumentMoniker": "Form1.Designer.cs",
               "ToolTip": "C:\\Users\\lisa\\OneDrive\\Documents\\WinFormTesseractOCR\\Form1.Designer.cs",
               "RelativeToolTip": "Form1.Designer.cs",
-              "ViewState": "AgIAABgCAAAAAAAAAAAvwCgCAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-03T00:42:13.577Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "packages.config",
               "DocumentMoniker": "C:\\Users\\lisa\\OneDrive\\Documents\\WinFormTesseractOCR\\packages.config",
               "RelativeDocumentMoniker": "packages.config",
               "ToolTip": "C:\\Users\\lisa\\OneDrive\\Documents\\WinFormTesseractOCR\\packages.config",
               "RelativeToolTip": "packages.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2025-02-13T00:54:38.565Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\lisa\\OneDrive\\Documents\\WinFormTesseractOCR\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",

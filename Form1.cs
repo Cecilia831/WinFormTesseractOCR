@@ -19,6 +19,7 @@ using System.Xml.Serialization;
 using System.IO;
 using System.Xml;
 using System.Threading;
+using System.Drawing.Text;
 
 namespace WinFormTesseractOCR
 {
@@ -28,28 +29,20 @@ namespace WinFormTesseractOCR
         List<ItemClass> ls;
         Queue<ItemClass> q;
         internal String message;
+        int done = 0;
+
         public Form1()
         {
             InitializeComponent();
             ls = new List<ItemClass>();
             q = new Queue<ItemClass>();
             xs = new XmlSerializer(typeof(List<ItemClass>));
-            
         }
 
-        //public Queue<ItemClass> q = new Queue<ItemClass>();
-
-        public void ReadStream() {
-            FileStream fs = new FileStream("..\\Item.xml", FileMode.OpenOrCreate, FileAccess.Read);
-            ls = (List<ItemClass>)xs.Deserialize(fs);
-            dataGridView1.DataSource = ls;
-            //q = (Queue<ItemClass>)xs.Deserialize(fs);
-            //dataGridView1.DataSource = q;
-            fs.Close();
-        }
 
         private void Button1_Click(object sender, EventArgs e)
         {
+            //Open PDF
             OpenFileDialog openfile = new OpenFileDialog();
             ComponentInfo.SetLicense("FREE-LIMITED-KEY");
             if (openfile.ShowDialog() == DialogResult.OK)
@@ -86,50 +79,15 @@ namespace WinFormTesseractOCR
                 var text = page.GetText().ToString();
                 
                 Console.WriteLine("Mean confidence: {0}", page.GetMeanConfidence());
-                Console.WriteLine("Text (GetText): \r\n{0}", text);
-                Console.WriteLine("Text (iterator):");
+                //Console.WriteLine("Text (GetText): \r\n{0}", text);
+                //Console.WriteLine("Text (iterator):");
                 img.Dispose();
             }
         }
 
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_2(object sender, EventArgs e)
-        {
-
-        }
-
         private void Button2_Click(object sender, EventArgs e)
         {
-             string s = textBox1.Text;
+            string s = textBox1.Text;
             //Extract date
             Regex date = new Regex(@"(0[1-9]|1[0-2])\/(0[1-9]|[12][0-9]|3[01])\/\d{2,4}");
             MatchCollection matcheddate = date.Matches(s);
@@ -184,34 +142,14 @@ namespace WinFormTesseractOCR
             }
         }
 
-        private void costCode_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_3(object sender, EventArgs e)
-        {
-
+            this.Size = new Size(1100,550);
         }
 
         private void inject_Click(object sender, EventArgs e)
         {
-            //Inject
+            //Inject Item
             FileStream fs = new FileStream("..\\Item.xml", FileMode.Create, FileAccess.Write);
             ItemClass ic = new ItemClass();
             ic.Id = "|";
@@ -226,81 +164,77 @@ namespace WinFormTesseractOCR
             xs.Serialize(fs, ls);
             fs.Close();
 
-            FileStream fsc = new FileStream("..\\Item.xml", FileMode.Open, FileAccess.Read);
-            ls = (List<ItemClass>)xs.Deserialize(fsc);
-            dataGridView1.DataSource = ls;
-            fsc.Close();
-            /*
-            q.Enqueue(ic);
-            xs.Serialize(fs, q);
-            fs.Close();
-
-            FileStream fsc = new FileStream("..\\Item.xml", FileMode.Open, FileAccess.Read);
-            q = (Queue<ItemClass>)xs.Deserialize(fsc);
-            dataGridView1.DataSource = q;
-            fsc.Close();
-            */
-
+            Display();
+            
             //Queue
             q.Enqueue(ic);
 
         }
+        public void ReadStream()
+        {
+            FileStream fs = new FileStream("..\\Item.xml", FileMode.OpenOrCreate, FileAccess.Read);
+            ls = (List<ItemClass>)xs.Deserialize(fs);
+            dataGridView1.DataSource = ls;
+            fs.Close();
+        }
+        private void Display() {
+            FileStream fsc = new FileStream("..\\Item.xml", FileMode.Open, FileAccess.Read);
+            ls = (List<ItemClass>)xs.Deserialize(fsc);
+            dataGridView1.DataSource = ls;
+            fsc.Close();
+        }
+        private void WriteStream(int i,String m)
+        {
+            FileStream fs = new FileStream("..\\Item.xml", FileMode.Open, FileAccess.Write);
+            ls[i].Id = m;
+            xs.Serialize(fs, ls);
+            fs.Close();
+            Display();
+        }
+
+
         // Read
         private void button2_Click_1(object sender, EventArgs e)
         {
-            FileStream fs = new FileStream("..\\Item.xml", FileMode.Open, FileAccess.Read);
-            ls = (List<ItemClass>)xs.Deserialize(fs);
-            dataGridView1.DataSource = ls;
-            
-            //q = (Queue<ItemClass>)xs.Deserialize(fs);
-            //dataGridView1.DataSource = q;
-            fs.Close();
+            Display();
         }
-        //Delete
+        
         private void button2_Click_2(object sender, EventArgs e)
         {
-            
-            FileStream fs = new FileStream("..\\Item.xml", FileMode.OpenOrCreate, FileAccess.Read);
+            //Clear
+            MessageBox.Show("Clear all items in list?");
+            ls = new List<ItemClass>();
+            done = 0;
+            q = new Queue<ItemClass>();
 
-            byte[] buffer = new byte[1024];
-
-            int bytesRead = fs.Read(buffer, 0, buffer.Length);
-
-            // Access the current position in the stream
-
-            long currentPosition = fs.Position;
-
-            MessageBox.Show($"Current position in the file: {currentPosition} bytes");
-
-            var last = fs.Length - 1;
-            MessageBox.Show(last.ToString());
-
-            //int loc = (int)fs.Position;
-            //MessageBox.Show(loc);
-            //ItemClass i = ls[loc];
-            //MessageBox.Show("Delete " + ls[loc].Title + " " + ls[loc].Amount + " " + ls[loc].Date+" " + ls[loc].CostCode +" "+ls[loc].Project + " " + ls[loc].AssignTo);
+            FileStream fs = new FileStream("..\\Item.xml", FileMode.Create, FileAccess.Write);
+            ls.Clear();
+            xs.Serialize(fs, ls);
             fs.Close();
-            //return fs.Position;
+
+            Display();
+
         }
+
 
         private void startButton_Click(object sender, EventArgs e)
         {
-            int done = 0;
+            
             int todo = q.Count();
             stateTestBox.Text = ($"Done: {done} | Queue: {todo}");
             ItemClass doing = new ItemClass();
-            
             while (q.Count > 0)
             {
                 // Inject Invoices
                 doing = q.Peek();
+                WriteStream(done, "--");
                 Inject(doing);
                 FreshListState();
                 q.Dequeue();
                 done = done + 1;
                 todo = q.Count();
                 stateTestBox.Text = ($"Done: {done} | Queue: {todo}");
-
+                
             }
         }
 
@@ -309,12 +243,33 @@ namespace WinFormTesseractOCR
             Automate.Program inj = new Automate.Program();
             message = inj.GetPONum(row);
             Console.WriteLine(message);
+            WriteStream(done, message);
         }
 
         private void FreshListState()
         {
 
         }
-    }
 
+        private void progressBar1_Click(object sender, EventArgs e)
+        {
+            WriteStream(0,"32434");
+        }
+
+        private void titleTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void subComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            titleTextBox.Text = subComboBox.Text + " "+ invoiceNumTextBox.Text; 
+        }
+
+        private void invoiceNumTextBox_TextChanged(object sender, EventArgs e)
+        {
+            titleTextBox.Text = subComboBox.Text + " " + invoiceNumTextBox.Text;
+        }
+    }
+    
 }

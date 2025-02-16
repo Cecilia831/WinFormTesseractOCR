@@ -2,29 +2,20 @@
 <ArrayOfItemClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ItemClass>
     <Id>|</Id>
-    <Title>Lowe's 1111</Title>
-    <Amount>1</Amount>
-    <Date>01/30/25</Date>
-    <CostCode>9000</CostCode>
-    <Project>Testing</Project>
-    <AssignTo>Lowe's</AssignTo>
+    <Title>Brothers Painting 24034</Title>
+    <Amount>3</Amount>
+    <Date>Not found</Date>
+    <CostCode />
+    <Project>Not found</Project>
+    <AssignTo />
   </ItemClass>
   <ItemClass>
     <Id>|</Id>
-    <Title>Lowe's 1111</Title>
-    <Amount>1</Amount>
-    <Date>01/30/25</Date>
-    <CostCode>9000</CostCode>
-    <Project>Testing</Project>
-    <AssignTo>Lowe's</AssignTo>
-  </ItemClass>
-  <ItemClass>
-    <Id>|</Id>
-    <Title>Lowe's 1111</Title>
-    <Amount>1</Amount>
-    <Date>01/30/25</Date>
-    <CostCode>9000</CostCode>
-    <Project>Testing</Project>
-    <AssignTo>Lowe's</AssignTo>
+    <Title>Brothers Painting 24034</Title>
+    <Amount>3</Amount>
+    <Date>Not found</Date>
+    <CostCode />
+    <Project>Not found</Project>
+    <AssignTo />
   </ItemClass>
 </ArrayOfItemClass>

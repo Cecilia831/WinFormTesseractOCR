@@ -1,21 +1,2 @@
 <?xml version="1.0"?>
-<ArrayOfItemClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <ItemClass>
-    <Id>|</Id>
-    <Title>Brothers Painting 24034</Title>
-    <Amount>3</Amount>
-    <Date>Not found</Date>
-    <CostCode />
-    <Project>Not found</Project>
-    <AssignTo />
-  </ItemClass>
-  <ItemClass>
-    <Id>|</Id>
-    <Title>Brothers Painting 24034</Title>
-    <Amount>3</Amount>
-    <Date>Not found</Date>
-    <CostCode />
-    <Project>Not found</Project>
-    <AssignTo />
-  </ItemClass>
-</ArrayOfItemClass>
+<ArrayOfItemClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />

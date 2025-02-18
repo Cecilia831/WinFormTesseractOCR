@@ -58,12 +58,27 @@
             this.buttonClearItem = new System.Windows.Forms.Button();
             this.buttonResume = new System.Windows.Forms.Button();
             this.buttonDelete = new System.Windows.Forms.Button();
+            this.labelAddress = new System.Windows.Forms.Label();
+            this.textBoxAddress = new System.Windows.Forms.TextBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.projectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newProjectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteProjectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteProjectToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.vendorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.newVendorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteVendorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.costCodeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.newProjectToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteProjectToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(68, 40);
+            this.button1.Location = new System.Drawing.Point(13, 36);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(175, 40);
@@ -74,7 +89,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(68, 89);
+            this.textBox1.Location = new System.Drawing.Point(13, 85);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -85,7 +100,7 @@
             // title
             // 
             this.title.AutoSize = true;
-            this.title.Location = new System.Drawing.Point(1346, 62);
+            this.title.Location = new System.Drawing.Point(1291, 58);
             this.title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.title.Name = "title";
             this.title.Size = new System.Drawing.Size(38, 20);
@@ -95,7 +110,7 @@
             // amount
             // 
             this.amount.AutoSize = true;
-            this.amount.Location = new System.Drawing.Point(1346, 258);
+            this.amount.Location = new System.Drawing.Point(1291, 254);
             this.amount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.amount.Name = "amount";
             this.amount.Size = new System.Drawing.Size(65, 20);
@@ -105,7 +120,7 @@
             // date
             // 
             this.date.AutoSize = true;
-            this.date.Location = new System.Drawing.Point(1342, 360);
+            this.date.Location = new System.Drawing.Point(1291, 372);
             this.date.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.date.Name = "date";
             this.date.Size = new System.Drawing.Size(44, 20);
@@ -114,7 +129,7 @@
             // 
             // titleTextBox
             // 
-            this.titleTextBox.Location = new System.Drawing.Point(1346, 89);
+            this.titleTextBox.Location = new System.Drawing.Point(1291, 85);
             this.titleTextBox.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.titleTextBox.Name = "titleTextBox";
             this.titleTextBox.Size = new System.Drawing.Size(220, 26);
@@ -123,7 +138,7 @@
             // 
             // amountTextBox
             // 
-            this.amountTextBox.Location = new System.Drawing.Point(1346, 302);
+            this.amountTextBox.Location = new System.Drawing.Point(1291, 298);
             this.amountTextBox.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.amountTextBox.Name = "amountTextBox";
             this.amountTextBox.Size = new System.Drawing.Size(220, 26);
@@ -131,7 +146,7 @@
             // 
             // dateTextBox
             // 
-            this.dateTextBox.Location = new System.Drawing.Point(1346, 404);
+            this.dateTextBox.Location = new System.Drawing.Point(1291, 400);
             this.dateTextBox.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.dateTextBox.Name = "dateTextBox";
             this.dateTextBox.Size = new System.Drawing.Size(220, 26);
@@ -139,7 +154,7 @@
             // 
             // projectTextBox
             // 
-            this.projectTextBox.Location = new System.Drawing.Point(1346, 566);
+            this.projectTextBox.Location = new System.Drawing.Point(1291, 562);
             this.projectTextBox.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.projectTextBox.Name = "projectTextBox";
             this.projectTextBox.Size = new System.Drawing.Size(220, 26);
@@ -148,7 +163,7 @@
             // project
             // 
             this.project.AutoSize = true;
-            this.project.Location = new System.Drawing.Point(1342, 540);
+            this.project.Location = new System.Drawing.Point(1287, 536);
             this.project.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.project.Name = "project";
             this.project.Size = new System.Drawing.Size(58, 20);
@@ -158,7 +173,7 @@
             // assignTo
             // 
             this.assignTo.AutoSize = true;
-            this.assignTo.Location = new System.Drawing.Point(1346, 618);
+            this.assignTo.Location = new System.Drawing.Point(1291, 615);
             this.assignTo.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.assignTo.Name = "assignTo";
             this.assignTo.Size = new System.Drawing.Size(83, 20);
@@ -168,7 +183,7 @@
             // invoiceNum
             // 
             this.invoiceNum.AutoSize = true;
-            this.invoiceNum.Location = new System.Drawing.Point(1346, 184);
+            this.invoiceNum.Location = new System.Drawing.Point(1291, 180);
             this.invoiceNum.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.invoiceNum.Name = "invoiceNum";
             this.invoiceNum.Size = new System.Drawing.Size(87, 20);
@@ -177,7 +192,7 @@
             // 
             // invoiceNumTextBox
             // 
-            this.invoiceNumTextBox.Location = new System.Drawing.Point(1346, 215);
+            this.invoiceNumTextBox.Location = new System.Drawing.Point(1291, 211);
             this.invoiceNumTextBox.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.invoiceNumTextBox.Name = "invoiceNumTextBox";
             this.invoiceNumTextBox.Size = new System.Drawing.Size(220, 26);
@@ -186,7 +201,7 @@
             // 
             // extract
             // 
-            this.extract.Location = new System.Drawing.Point(271, 40);
+            this.extract.Location = new System.Drawing.Point(216, 36);
             this.extract.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.extract.Name = "extract";
             this.extract.Size = new System.Drawing.Size(173, 40);
@@ -197,7 +212,7 @@
             // 
             // inject
             // 
-            this.inject.Location = new System.Drawing.Point(472, 40);
+            this.inject.Location = new System.Drawing.Point(417, 36);
             this.inject.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.inject.Name = "inject";
             this.inject.Size = new System.Drawing.Size(175, 40);
@@ -208,7 +223,7 @@
             // 
             // costCodeTextBox
             // 
-            this.costCodeTextBox.Location = new System.Drawing.Point(1346, 488);
+            this.costCodeTextBox.Location = new System.Drawing.Point(1291, 484);
             this.costCodeTextBox.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.costCodeTextBox.Name = "costCodeTextBox";
             this.costCodeTextBox.Size = new System.Drawing.Size(220, 26);
@@ -217,7 +232,7 @@
             // costCode
             // 
             this.costCode.AutoSize = true;
-            this.costCode.Location = new System.Drawing.Point(1342, 449);
+            this.costCode.Location = new System.Drawing.Point(1287, 445);
             this.costCode.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.costCode.Name = "costCode";
             this.costCode.Size = new System.Drawing.Size(84, 20);
@@ -356,7 +371,7 @@
             "Premier Pacific Roofing",
             "Barbur BLVD Rentals INC",
             "BiMart"});
-            this.assignToComboBox.Location = new System.Drawing.Point(1346, 662);
+            this.assignToComboBox.Location = new System.Drawing.Point(1291, 639);
             this.assignToComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.assignToComboBox.Name = "assignToComboBox";
             this.assignToComboBox.Size = new System.Drawing.Size(220, 28);
@@ -364,7 +379,7 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(68, 402);
+            this.progressBar1.Location = new System.Drawing.Point(13, 398);
             this.progressBar1.Margin = new System.Windows.Forms.Padding(4);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(150, 34);
@@ -374,7 +389,7 @@
             // Sub
             // 
             this.Sub.AutoSize = true;
-            this.Sub.Location = new System.Drawing.Point(1346, 126);
+            this.Sub.Location = new System.Drawing.Point(1291, 122);
             this.Sub.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Sub.Name = "Sub";
             this.Sub.Size = new System.Drawing.Size(38, 20);
@@ -513,7 +528,7 @@
             "Premier Pacific Roofing",
             "Barbur BLVD Rentals INC",
             "BiMart"});
-            this.subComboBox.Location = new System.Drawing.Point(1346, 150);
+            this.subComboBox.Location = new System.Drawing.Point(1291, 146);
             this.subComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.subComboBox.Name = "subComboBox";
             this.subComboBox.Size = new System.Drawing.Size(220, 28);
@@ -523,17 +538,16 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(68, 480);
+            this.dataGridView1.Location = new System.Drawing.Point(13, 476);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dataGridView1.Size = new System.Drawing.Size(1224, 225);
+            this.dataGridView1.Size = new System.Drawing.Size(1224, 268);
             this.dataGridView1.TabIndex = 27;
             // 
             // goButton
             // 
-            this.goButton.Location = new System.Drawing.Point(255, 402);
+            this.goButton.Location = new System.Drawing.Point(200, 398);
             this.goButton.Margin = new System.Windows.Forms.Padding(4);
             this.goButton.Name = "goButton";
             this.goButton.Size = new System.Drawing.Size(112, 34);
@@ -544,7 +558,7 @@
             // 
             // delete
             // 
-            this.delete.Location = new System.Drawing.Point(689, 402);
+            this.delete.Location = new System.Drawing.Point(634, 398);
             this.delete.Margin = new System.Windows.Forms.Padding(4);
             this.delete.Name = "delete";
             this.delete.Size = new System.Drawing.Size(112, 34);
@@ -555,7 +569,7 @@
             // 
             // stateTestBox
             // 
-            this.stateTestBox.Location = new System.Drawing.Point(974, 410);
+            this.stateTestBox.Location = new System.Drawing.Point(919, 406);
             this.stateTestBox.Margin = new System.Windows.Forms.Padding(4);
             this.stateTestBox.Name = "stateTestBox";
             this.stateTestBox.Size = new System.Drawing.Size(240, 26);
@@ -564,7 +578,7 @@
             // 
             // startButton
             // 
-            this.startButton.Location = new System.Drawing.Point(831, 402);
+            this.startButton.Location = new System.Drawing.Point(776, 398);
             this.startButton.Margin = new System.Windows.Forms.Padding(4);
             this.startButton.Name = "startButton";
             this.startButton.Size = new System.Drawing.Size(112, 34);
@@ -575,7 +589,7 @@
             // 
             // buttonClearItem
             // 
-            this.buttonClearItem.Location = new System.Drawing.Point(676, 40);
+            this.buttonClearItem.Location = new System.Drawing.Point(621, 36);
             this.buttonClearItem.Name = "buttonClearItem";
             this.buttonClearItem.Size = new System.Drawing.Size(175, 40);
             this.buttonClearItem.TabIndex = 32;
@@ -584,30 +598,147 @@
             // 
             // buttonResume
             // 
-            this.buttonResume.Location = new System.Drawing.Point(401, 402);
+            this.buttonResume.Location = new System.Drawing.Point(346, 398);
             this.buttonResume.Name = "buttonResume";
             this.buttonResume.Size = new System.Drawing.Size(112, 34);
             this.buttonResume.TabIndex = 33;
             this.buttonResume.Text = "Resume";
             this.buttonResume.UseVisualStyleBackColor = true;
+            this.buttonResume.Click += new System.EventHandler(this.buttonResume_Click);
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(544, 402);
+            this.buttonDelete.Location = new System.Drawing.Point(489, 398);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(112, 34);
             this.buttonDelete.TabIndex = 34;
             this.buttonDelete.Text = "Delete Last";
             this.buttonDelete.UseVisualStyleBackColor = true;
             // 
+            // labelAddress
+            // 
+            this.labelAddress.AutoSize = true;
+            this.labelAddress.Location = new System.Drawing.Point(1291, 690);
+            this.labelAddress.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.labelAddress.Name = "labelAddress";
+            this.labelAddress.Size = new System.Drawing.Size(68, 20);
+            this.labelAddress.TabIndex = 36;
+            this.labelAddress.Text = "Address";
+            // 
+            // textBoxAddress
+            // 
+            this.textBoxAddress.Location = new System.Drawing.Point(1291, 718);
+            this.textBoxAddress.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.textBoxAddress.Name = "textBoxAddress";
+            this.textBoxAddress.Size = new System.Drawing.Size(220, 26);
+            this.textBoxAddress.TabIndex = 35;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.projectToolStripMenuItem,
+            this.vendorToolStripMenuItem1,
+            this.costCodeToolStripMenuItem1});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1628, 33);
+            this.menuStrip1.TabIndex = 38;
+            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
+            // 
+            // projectToolStripMenuItem
+            // 
+            this.projectToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newProjectToolStripMenuItem,
+            this.deleteProjectToolStripMenuItem});
+            this.projectToolStripMenuItem.Name = "projectToolStripMenuItem";
+            this.projectToolStripMenuItem.Size = new System.Drawing.Size(82, 29);
+            this.projectToolStripMenuItem.Text = "Project";
+            // 
+            // newProjectToolStripMenuItem
+            // 
+            this.newProjectToolStripMenuItem.Name = "newProjectToolStripMenuItem";
+            this.newProjectToolStripMenuItem.Size = new System.Drawing.Size(223, 34);
+            this.newProjectToolStripMenuItem.Text = "New Project";
+            // 
+            // deleteProjectToolStripMenuItem
+            // 
+            this.deleteProjectToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.deleteToolStripMenuItem,
+            this.deleteProjectToolStripMenuItem1});
+            this.deleteProjectToolStripMenuItem.Name = "deleteProjectToolStripMenuItem";
+            this.deleteProjectToolStripMenuItem.Size = new System.Drawing.Size(223, 34);
+            this.deleteProjectToolStripMenuItem.Text = "Delete Project";
+            // 
+            // deleteToolStripMenuItem
+            // 
+            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(286, 34);
+            this.deleteToolStripMenuItem.Text = "Delete Current Project";
+            // 
+            // deleteProjectToolStripMenuItem1
+            // 
+            this.deleteProjectToolStripMenuItem1.Name = "deleteProjectToolStripMenuItem1";
+            this.deleteProjectToolStripMenuItem1.Size = new System.Drawing.Size(286, 34);
+            this.deleteProjectToolStripMenuItem1.Text = "Delete Project";
+            // 
+            // vendorToolStripMenuItem1
+            // 
+            this.vendorToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newVendorToolStripMenuItem,
+            this.deleteVendorToolStripMenuItem});
+            this.vendorToolStripMenuItem1.Name = "vendorToolStripMenuItem1";
+            this.vendorToolStripMenuItem1.Size = new System.Drawing.Size(85, 29);
+            this.vendorToolStripMenuItem1.Text = "Vendor";
+            // 
+            // newVendorToolStripMenuItem
+            // 
+            this.newVendorToolStripMenuItem.Name = "newVendorToolStripMenuItem";
+            this.newVendorToolStripMenuItem.Size = new System.Drawing.Size(226, 34);
+            this.newVendorToolStripMenuItem.Text = "New Vendor";
+            // 
+            // deleteVendorToolStripMenuItem
+            // 
+            this.deleteVendorToolStripMenuItem.Name = "deleteVendorToolStripMenuItem";
+            this.deleteVendorToolStripMenuItem.Size = new System.Drawing.Size(226, 34);
+            this.deleteVendorToolStripMenuItem.Text = "Delete Vendor";
+            // 
+            // costCodeToolStripMenuItem1
+            // 
+            this.costCodeToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newProjectToolStripMenuItem1,
+            this.deleteProjectToolStripMenuItem2});
+            this.costCodeToolStripMenuItem1.Name = "costCodeToolStripMenuItem1";
+            this.costCodeToolStripMenuItem1.Size = new System.Drawing.Size(111, 29);
+            this.costCodeToolStripMenuItem1.Text = "Cost Code";
+            this.costCodeToolStripMenuItem1.Click += new System.EventHandler(this.costCodeToolStripMenuItem1_Click);
+            // 
+            // newProjectToolStripMenuItem1
+            // 
+            this.newProjectToolStripMenuItem1.Name = "newProjectToolStripMenuItem1";
+            this.newProjectToolStripMenuItem1.Size = new System.Drawing.Size(223, 34);
+            this.newProjectToolStripMenuItem1.Text = "New Project";
+            // 
+            // deleteProjectToolStripMenuItem2
+            // 
+            this.deleteProjectToolStripMenuItem2.Name = "deleteProjectToolStripMenuItem2";
+            this.deleteProjectToolStripMenuItem2.Size = new System.Drawing.Size(223, 34);
+            this.deleteProjectToolStripMenuItem2.Text = "Delete Project";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScrollMargin = new System.Drawing.Size(10, 0);
+            this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.ClientSize = new System.Drawing.Size(1713, 858);
+            this.ClientSize = new System.Drawing.Size(1628, 786);
+            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.labelAddress);
+            this.Controls.Add(this.textBoxAddress);
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonResume);
             this.Controls.Add(this.buttonClearItem);
@@ -641,11 +772,14 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Form1";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Automate";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -682,6 +816,20 @@
         private System.Windows.Forms.Button buttonClearItem;
         private System.Windows.Forms.Button buttonResume;
         private System.Windows.Forms.Button buttonDelete;
+        private System.Windows.Forms.Label labelAddress;
+        private System.Windows.Forms.TextBox textBoxAddress;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem projectToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem vendorToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem costCodeToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem newProjectToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteProjectToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteProjectToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem newVendorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteVendorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem newProjectToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem deleteProjectToolStripMenuItem2;
     }
 }
 

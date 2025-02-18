@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
+using System.Drawing;
 using System.Threading.Tasks;
 using System.Globalization;
 using System.Windows.Documents;
@@ -23,12 +24,15 @@ using System.Linq.Expressions;
 using SkiaSharp;
 using OpenQA.Selenium.DevTools.V130.FedCm;
 
+
+
 namespace Automate
 {
     public class Program
     {
         private string message;
         private ChromeDriver Login;
+        
         public String GetPONum(WinFormTesseractOCR.ItemClass item)
         {
             Program pro = new Program();
@@ -62,13 +66,13 @@ namespace Automate
             options.AddArguments("--disable-notifications"); // to disable notification
             options.AddArguments("--disable-application-cache"); // to disable cache
             options.AddArguments("--start-maximized"); // to maximize window
-            options.AddArguments("--headless");// to hide prompt port window
+            //options.AddArgument("--no-startup-window");
             options.DebuggerAddress = "127.0.0.1:9999";
-
+            Console.WriteLine(options.Arguments);
             ChromeDriver d = new ChromeDriver(options);
-            Thread.Sleep(3000);
-            
-            d.Navigate().GoToUrl("https://buildertrend.net/app/Landing");
+            Thread.Sleep(10000);
+            Console.WriteLine(d.Url);
+            d.Url= "https://buildertrend.net/app/Landing";
             Thread.Sleep(5000);
 
             return d;
@@ -85,6 +89,7 @@ namespace Automate
                 row.Add("CostCode", item.CostCode);
                 row.Add("Project", item.Project);
                 row.Add("AssignTo", item.AssignTo);
+                row.Add("Address", item.Address);
 
                 return row;
             }
@@ -169,8 +174,8 @@ namespace Automate
 
         static void SearchNewPO(ChromeDriver d, IDictionary<String, String> row)
         {
-            try
-            {
+            //try
+            //{
                 Thread.Sleep(2000);
                 IWebElement e = d.FindElement(By.Id("JobSearch"));
                 e.SendKeys(row["Project"]);
@@ -178,11 +183,11 @@ namespace Automate
                 e = d.FindElement(By.ClassName("ItemRowJobName"));
                 e.Click();// Click to Job Order
                 Thread.Sleep(5000);
-            }
-            catch
-            {
-                Console.WriteLine("Failed to Search PO number.");
-            }
+            //}
+            //catch
+            //{
+             //   Console.WriteLine("Failed to Search PO number.");
+            //}
         }
 
         static bool CheckDuplicatePO(WebDriver d, IDictionary<String, String> row)
@@ -210,19 +215,19 @@ namespace Automate
 
         static void StartNewPO(ChromeDriver d)
         {
-            try
-            {
+            //try
+            //{
                 //Find and click New -> PO
                 IWebElement e = d.FindElement(By.XPath("//*[@data-testid='newPurchaseOrderGroup' and @type='button']"));
                 e.Click();
                 e = d.FindElement(By.XPath("//*[@data-testid='newPurchaseOrder' and @type='button']"));
                 e.Click();
                 Thread.Sleep(5000);
-            }
-            catch
-            {
-                Console.WriteLine("Failed to Search PO number.");
-            }
+            //}
+            //catch
+            //{
+            //    Console.WriteLine("Failed to Search PO number.");
+            //}
         }
 
         static string InputPO(WebDriver d, IDictionary<String, String> row)

@@ -1,7 +1,7 @@
 ## Automate Readme
 
 ###### Usage 
-[![](Automate.jpg)](https://www.loom.com/share/18a9b1ff2b924a668e13bd1929dbe26a?sid=b271f4ab-76e9-483e-ab76-5b5056993aab)
+[![](Automate.jpg)](https://www.loom.com/share/18a9b1ff2b924a668e13bd1929dbe26a?sid=b0d31115-4a04-42b3-a1d6-8eb52278bbee)
 ###### Description
 This is a project that inject financial data into cloud-based management software Buildertrend.
 
